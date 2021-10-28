@@ -1,0 +1,503 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*ESTILOS GENERALES*/
+html, body{
+    height: 100%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.09rem;
+}
+/*MODIFICAR EL MODELO DE CAJAS DE CSS*/
+html{
+    -webkit-box-sizing:border-box;
+            box-sizing: border-box;
+}
+*,*::before,*::after{
+    -webkit-box-sizing:inherit;
+            box-sizing: inherit;
+}
+/*RESETEAR MARGENES Y PADDING*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*CENTRAR ELEMENTOS EN PANTALLA*/
+.container{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+/*ESTILOS DE LOS TEXTOS*/
+h2 {
+    font-size: 1.85rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.divider {
+    border-bottom: 2px solid #0610a6;
+    width: 115px;
+    margin: 30px auto;
+}
+/*APLICAR PADDING TOP AL ELEMENTO MAIN*/
+main {
+    padding-top: 60px;
+}
+/*BARRA DE NAVEGACION*/
+#navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+#main-nav li {
+    padding: 12px 0.85em;
+}
+#main-nav li a {
+    color: #0f0f0f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+
+#main-nav li a:hover {
+    border-bottom: 2px solid #0610a6;
+}
+#main-nav + a {
+    color: #0f0f0f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    border: 1px solid #0610a6;
+    padding: 12px 3em;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#main-nav + a:hover {
+    background-color: #0610a6;
+    color: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+nav {
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+#navigation span {
+    display: none;
+}
+/*SECCION */
+article > section:nth-child(1) {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(41,24,21,0.1)),to(rgba(41,24,21,0.1))) ,url(../images/fondo.jpg);
+    background-image: -o-linear-gradient(rgba(41,24,21,0.1),rgba(41,24,21,0.1)) ,url(../images/fondo.jpg);
+    background-image: linear-gradient(rgba(41,24,21,0.1),rgba(41,24,21,0.1)) ,url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#seccionPrimera {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    min-height: 600px;
+}
+#seccionPrimera h1 {
+    font-size: 5rem;
+    font-family: arial, tahoma, verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa700;
+    text-shadow: 5px 3px 0 #000;
+}
+/*SECCION 2*/
+article > section:nth-child(2) {
+    margin: 60px 0;
+}
+
+#seccionSegunda {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-top: 40px;
+}
+
+#seccionSegunda img {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    max-width: 35%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    height: 300px;
+}
+#seccionSegunda div {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    padding-left: 1.85rem
+}
+/*SECCION 3*/
+#seccionTercera {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    height: 360px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+}
+article > section:nth-child(3) {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(41,24,21,0.3)),to(rgba(41,24,21,0.5))) ,url(../images/imagendebloque.jpg);
+    background-image: -o-linear-gradient(rgba(41,24,21,0.3),rgba(41,24,21,0.5)) ,url(../images/imagendebloque.jpg);
+    background-image: linear-gradient(rgba(41,24,21,0.3),rgba(41,24,21,0.5)) ,url(../images/imagendebloque.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+}
+/*SECCION 4 */
+article > section:nth-child(4) {
+    margin: 60px 0;
+}
+#SeccionCuarta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+#SeccionCuarta img {
+    width: 100%;
+}
+#SeccionCuarta div {
+    margin: 0 0.5em;
+    -webkit-box-shadow: -2px 2px 2px #ccc, 2px 4px 1px #ccc;
+            box-shadow: -2px 2px 2px #ccc, 2px 4px 1px #ccc;
+    padding-bottom: 15px;
+}
+#SeccionCuarta h3 {
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 700;
+}
+/*Seccion 5*/
+article > section:nth-child(5) {
+    margin: 60px 0;
+    text-align: center;
+    background-color: #fcfcfc;
+    padding: 60px 0;
+}
+#seccionQuinta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 65px;
+}
+.col {
+    width: 33%;
+    margin: 0 0.5em;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.col:hover {
+    -webkit-box-shadow: 0 -5px 15px #dad8d8, 0 8px 15px #dad8d8;
+            box-shadow: 0 -5px 15px #dad8d8, 0 8px 15px #dad8d8;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.col ul {
+    border: 1px solid #ccc;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.col ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+.package-heather {
+    font-size: 1.5rem;
+}
+.prize {
+    background-color: #ececec;
+    font-size: 1.30rem;
+}
+.col ul li i {
+    color: #008000;
+}
+/*SECCION 6*/
+article > section:nth-child(6) {
+    margin: 60px 0 0;
+}
+#addressBox {
+    text-align: center;
+}
+addressBox p {
+    margin-bottom: 12px;
+}
+#contactForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 60px 0 12px;
+}
+label {
+    font-size: 1.2rem;
+    margin: 12px 0;
+}
+.col-input {
+    width: 33%;
+    padding: 0 0.5em;
+}
+.col-input input {
+    width: 100%;
+    height: 45px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+}
+#col-text {
+    padding: 0 0.5rem;
+}
+#mensaje {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+}
+.col-input input:focus, #col-text textarea:focus {
+    border: 1px solid #3f3d3d;
+    -webkit-box-shadow: 0 0 8px #3f3d3d;
+            box-shadow: 0 0 8px #3f3d3d;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+input[type="submit"] {
+    background-color: #0610a6;
+    color: #fff;
+    display: inline-block;
+    width: 215px;
+    height: 45px;
+    font-size: 1rem;
+    margin: 12px 0.5em 25px;
+    border-radius: 8px;
+}
+/*PIE DE PAGINA*/
+footer {
+    background-color: #1e1e1e;
+    padding: 30px 0 0;
+}
+#pieDePagina {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#pieDePagina a i {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 12px;
+}
+#copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 0;
+    border-top: 1px solid #413d3d;
+    margin: 12px 0 0;
+}
+/*MEDIA QUERIES*/
+/*APLICAR LOS SIGUIENTES ESTILOS CUANDO EL TAMAÑO DEL VIEWPORT SEA IGUAL O MENOR1199px*/
+@media screen and (max-width: 1199px ){
+    body {
+    font-size: 1.03rem;
+}
+} 
+/*APLICAR LOS SIGUIENTES ESTILOS CUANDO EL TAMAÑO DEL VIEWPORT SE ENCUENTRE ENTRE 980px y 1199px*/
+@media screen and (min-width: 980px) and (max-width: 1199px){
+    #seccionSegunda img {
+        display: none;
+    }
+    #seccionSegunda div {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        padding-left: 0rem;
+        text-align: center;
+    }
+    .col ul li:nth-child(n+3) {
+    font-weight: bold;
+    font-size: 0.95rem;
+    }
+    label {
+    font-size: 0.95rem;
+    }
+}
+/*APLICAR LOS SIGUIENTES ESTILOS CUANDO EL TAMAÑO DEL VIEWPORT SE ENCUENTRE ENTRE 980px y 1199px*/
+@media screen and (min-width: 960px) and (max-width: 979px){
+    #main-nav li {
+        font-size: 0.95rem;
+    }
+    #main-nav + a {
+        padding: 12px 1.4em;
+    }
+    #seccionSegunda img {
+        display: none;
+    }
+    #seccionSegunda div {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        padding-left: 0rem;
+        text-align: center;
+    }
+    .package-heather {
+        font-size: 1.1rem;
+    }
+    .prize {
+        background-color: #ececec;
+        font-size: 1rem;
+    }
+    article > section:nth-child(5) {
+        font-size: 0.9rem;
+    }
+}
+/*APLICAR LOS SIGUIENTES ESTILOS CUANDO EL TAMAÑO DEL VIEWPORT SEA MENOR A 959px*/
+@media screen and (max-width: 959px){
+    #main-nav, #main-nav + a {
+        display: none;
+        font-weight: bold;
+    }
+    #navigation span {
+        display: block;
+        border: 1px solid #f00;
+        padding: 12px 1em;
+        font-weight: bold;
+        }
+    #seccionPrimera h1 {
+        font-size: 3.5rem;
+}
+    #seccionSegunda, #seccionTercera, #seccionQuinta, #seccionSexta {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+}
+    #seccionSegunda img {
+        display: none;
+    }
+    #seccionSegunda div {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        padding-left: 0rem;
+        text-align: center;
+    }
+    .col {
+    width: 100%;
+    margin: 7px;
+    }
+    .col-input {
+        width: 100%;
+    }
+    #SeccionCuarta {
+        display: contents;
+    }
+}
+/*APLICAR LOS SIGUIENTES ESTILOS CUANDO EL TAMAÑO DEL VIEWPORT SEA IGUAL O MENOR A 500px*/
+@media screen and (max-width: 500px){
+    #navigation span {
+    border: none;
+    }
+    #seccionPrimera h1 {
+    font-size: 2.9rem;    
+    }   
+    p {
+        line-height: 1;
+    }
+    label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    }
+}
+/*APLICAR LOS SIGUIENTES ESTILOS CUANDO EL TAMAÑO DEL VIEWPORT SEA IGUAL O MENOR A 500px*/
+@media screen and (max-width: 420px){
+     #seccionPrimera h1 {
+    font-size: 2.3rem;    
+    }
+    .col-input input, #mensaje {
+    border: 1px solid #000;
+    }
+
+    label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    }
+}
